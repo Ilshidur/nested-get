@@ -1,0 +1,35 @@
+{
+  "name": "nested-get",
+  "version": "1.0.0",
+  "description": "Get nested value inside an array or object.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Ilshidur/nested-get.git"
+  },
+  "keywords": [
+    "get",
+    "nested",
+    "value",
+    "deep",
+    "object",
+    "array",
+    "item",
+    "filter"
+  ],
+  "author": "Ilshidur",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/Ilshidur/nested-get/issues"
+  },
+  "homepage": "https://gitlab.com/Ilshidur/nested-get#README",
+  "dependencies": {
+    "mocha": "^4.0.1"
+  }
+}
