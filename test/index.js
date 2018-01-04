@@ -13,7 +13,8 @@ get([1, 2, 3], '*'); // [1, 2, 3]
 
 get({ a: [1, 2, 3] }, 'a.1'); // 2
 get({ a: [1, 2, 3] }, 'a.*'); // [1, 2, 3]
+get({ a: [1, 2, 3] }, 'a.*.1'); // 2
 get({ a: [{ b: 1, c: 2 }, { b: 3, c: 6 }] }, 'a.*.b'); // [1, 3]
 get({ a: [{ b: 1, c: 2 }, { b: 3, c: 6 }], b: 2, c: 3 }, ['a.*.b', 'b', 'c', 2]); // [[1, 3], 2, 3, { c: 3 }]
 
-// TODO: Create function to run to get the result
+// TODO: Create (recursive) function to run to get the result
