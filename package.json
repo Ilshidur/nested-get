@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,9 @@
     "url": "https://gitlab.com/Ilshidur/nested-get/issues"
   },
   "homepage": "https://gitlab.com/Ilshidur/nested-get#README",
-  "dependencies": {
-    "mocha": "^4.0.1"
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0"
   }
 }

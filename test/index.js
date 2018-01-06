@@ -1,11 +1,43 @@
+const expect = requre('chai').expect;
+
 const get = require('../');
 
-get('foo', 0); // 'f'
-get('foo', 1); // 'o'
+describe('nested-get', function() {
 
-get({ a: 1, b: 2 }, 'a'); // 1
-get({ a: 1, b: { c: 2 } }, 'b.c'); // 2
-get({ a: 1, b: { c: 2 } }, 0); // { a: 1 }
+    // TODO: throw error if :
+    // - filter < 0
+    // - empty string 
+    // - float
+
+    it('should get from string with int', function() {
+        const result1 = get('foo', 0); // 'f'
+        expect(result1).to.equal('f');
+        const result2 = get('foo', 1); // 'o'
+        expect(result2).to.equal('f');
+    });
+
+    it('should get from object with char', function() {
+        const result1 = get({ a: 1, b: 2 }, 'a');
+        expect(result1).to.equal(1);
+        const result2 = get({ a: 1, b: 2 }, 'b');
+        expect(result2).to.equal(2);
+    });
+
+    it('should get from object with nested chars (2)', function() {
+        const result = get({ a: 1, b: { c: 2 } }, 'b.c');
+        expect(result).to.equal(2);
+    });
+    it('should get from object with nested chars (3)', function() {
+        const result = get({ a: 1, b: { c: { d: 2 } } }, 'b.c.d');
+        expect(result).to.equal(2);
+    });
+
+    it('should get from object with int', function() {
+        const result = get({ a: 1, b: { c: { d: 2 } } }, 0);
+        expect(result).to.equal({ a: 1 });
+    });
+
+});
 
 get([1, 2, 3], '0'); // 1
 get([1, 2, 3], 1); // 2
