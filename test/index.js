@@ -1,13 +1,24 @@
-const expect = requre('chai').expect;
+const expect = require('chai').expect;
 
 const get = require('../');
 
 describe('nested-get', function() {
 
-    // TODO: throw error if :
-    // - filter < 0
-    // - empty string 
-    // - float
+    it('should throw an error if the filter is undefined', function() {
+        expect(() => get({ a: 1 }, undefined)).to.throw(Error);
+    });
+    it('should throw an error if the filter is NaN', function() {
+        expect(() => get({ a: 1 }, NaN)).to.throw(Error);
+    });
+    it('should throw an error if the filter is null', function() {
+        expect(() => get({ a: 1 }, null)).to.throw(Error);
+    });
+    it('should throw an error if the filter is empty string', function() {
+        expect(() => get({ a: 1 }, '')).to.throw(Error);
+    });
+    it('should throw an error if the filter is below 0', function() {
+        expect(() => get({ a: 1 }, -1)).to.throw(Error);
+    });
 
     it('should get from string with int', function() {
         const result1 = get('foo', 0); // 'f'
