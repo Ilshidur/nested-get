@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/Ilshidur/nested-get.git"
+    "url": "https://github.com/Ilshidur/nested-get.git"
   },
   "keywords": [
     "get",
@@ -26,9 +26,9 @@
   "author": "Ilshidur",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/Ilshidur/nested-get/issues"
+    "url": "https://github.com/Ilshidur/nested-get/issues"
   },
-  "homepage": "https://gitlab.com/Ilshidur/nested-get#README",
+  "homepage": "https://github.com/Ilshidur/nested-get#README",
   "dependencies": {},
   "devDependencies": {
     "chai": "^4.1.2",
