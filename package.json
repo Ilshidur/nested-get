@@ -1,7 +1,7 @@
 {
   "name": "nested-get",
   "version": "1.0.0",
-  "description": "Get nested value inside an array or object.",
+  "description": "Get nested value inside a string, an array or an object.",
   "main": "index.js",
   "directories": {
     "test": "test"
