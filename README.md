@@ -1,4 +1,4 @@
-# nested-get
+# nested-get
 
 > Get nested value inside a string, an array or an object.
 
