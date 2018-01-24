@@ -2,7 +2,7 @@
 
 > Get nested value inside a string, an array or an object.
 
-![stability-unstable](https://img.shields.io/badge/stability-stable-yellow.svg)
+![stability-unstable](https://img.shields.io/badge/stability-stable-green.svg)
 
 [![npm version][version-badge]][version-url]
 [![Known Vulnerabilities][vulnerabilities-badge]][vulnerabilities-url]
