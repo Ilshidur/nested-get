@@ -1,3 +1,15 @@
+## 1.0.2 - Jan 30th 2018
+
+**Feature :**
+* Yarn support
+
+**Fix :**
+* fix empty error message when 'filter' is invalid
+
+**Other :**
+* removed code smell (#88b77acdb46375660fa4f3472c70d131e8cd4ea7)
+* Travis-CI integration
+
 ## 1.0.1 - Jan. 13th 2018
 
 **Change :**
