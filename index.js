@@ -122,6 +122,7 @@ function get(data, filter) {
     }
 
   } else if (typeof data === 'object' && !Array.isArray(data)) {
+    // data = object
 
     if (typeof filter === 'number') {
       return fromObjectWithNumber(data, filter);
@@ -133,7 +134,8 @@ function get(data, filter) {
       throw new Error('Invalid filter');
     }
 
-  } else if (typeof data === 'object' && Array.isArray(data)) {
+  } else if (typeof data === 'object') {
+    // data = array
 
     if (typeof filter === 'number') {
       return fromArrayWithNumber(data, filter);
