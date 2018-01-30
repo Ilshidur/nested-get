@@ -1,5 +1,6 @@
 test
 .editorconfig
 .gitignore
+.travis.yml
 CHANGELOG.md
 README.md
