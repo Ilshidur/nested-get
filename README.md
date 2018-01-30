@@ -8,6 +8,7 @@
 [![Known Vulnerabilities][vulnerabilities-badge]][vulnerabilities-url]
 [![dependency status][dependency-badge]][dependency-url]
 [![devdependency status][devdependency-badge]][devdependency-url]
+[![build status][build-badge]][build-url]
 [![downloads][downloads-badge]][downloads-url]
 
 [![NPM][npm-stats-badge]][npm-stats-url]
@@ -102,6 +103,8 @@ SOFTWARE.
 [dependency-url]: https://david-dm.org/ilshidur/nested-get
 [devdependency-badge]: https://david-dm.org/ilshidur/nested-get/dev-status.svg
 [devdependency-url]: https://david-dm.org/ilshidur/nested-get#info=devDependencies
+[build-badge]: https://travis-ci.org/Ilshidur/nested-get.svg
+[build-url]: https://travis-ci.org/Ilshidur/nested-get
 [downloads-badge]: https://img.shields.io/npm/dt/nested-get.svg
 [downloads-url]: https://www.npmjs.com/package/nested-get
 [npm-stats-badge]: https://nodei.co/npm/nested-get.png?downloads=true&downloadRank=true
