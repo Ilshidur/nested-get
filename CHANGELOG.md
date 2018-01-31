@@ -1,3 +1,8 @@
+## Staging
+
+**Minor change :**
+* bump mocha
+
 ## 1.0.2 - Jan 30th 2018
 
 **Feature :**
