@@ -13,6 +13,15 @@
 
 [![NPM][npm-stats-badge]][npm-stats-url]
 
+## Compatibility
+
+* Server : Node.js >= 6.0.0
+* Browser :
+  * Chrome >= 49
+  * Firefox >= 34
+  * Edge >= 12
+  * Opera >= 37
+
 ## Use
 
 *`get(data, filter)`*
