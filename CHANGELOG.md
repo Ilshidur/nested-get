@@ -1,7 +1,12 @@
-## Staging
+## 1.0.5 - Feb 6nd 2018
 
 **Docs :**
-* ReadMe : compatibility notes and various clarifications
+* ReadMe : various clarifications
+
+## 1.0.4 - Feb 3nd 2018
+
+**Docs :**
+* ReadMe : compatibility notes
 
 ## 1.0.3 - Jan 31th 2018
 
