@@ -27,14 +27,17 @@
 *`get(data, filter)`*
 
 * `data` (`string`||`object`): Contains the datas to get.
-* `filter` (`number`||`object`||`string`): What to get. See the examples below.
+* `filter` (`number`||`object`||`string`): Defines the content to get from `data`. See the examples below.
 
-### Operators
+### String Operators on objects
+
+If the `filter` argument is a `string`, it can contain the following operators in order to get nested object attributes.
 
 * `a.b` : Get the `b` attribute of the object `a`.
-* `a.*` : Get everything from the array `a`.
+* `a.*` : Get everything from the array `a`. Acts like a `map()` function.
 * `a.*.b` : Map on the array `a` with the `b` attribute.
-* `~a` : Keep the key/value data of the object `a` instead of only its value.
+* `~a` : Keep the key/value data of the object `a` instead of only its value. This operator can only be placed before an object attribute.
+  * e.g. : on `{ a: 1, b: 2 }` => gets `{ a: 1 }` instead of just `1`.
 
 ### Examples
 
@@ -43,41 +46,41 @@ const get = require('nested-get');
 
 // Get from a string
 get('foo', 1);
-// 'o'
+// => 'o'
 get('foo', [0, 1]);
-// ['f', 'o']
+// => ['f', 'o']
 
 // Get from an object
 get({ a: 1, b: 1 }, 0);
-// { a: 1 }
+// => { a: 1 }
 get({ a: 1, b: 1 }, 'a');
-// 1
+// => 1
 get({ a: 1, b: { c: 2 } }, 'b.c');
-// 2
+// => 2
 get({ a: 1, b: { c: 2 } }, 'b.0');
-// { c: 2 }
+// => { c: 2 }
 get({ a: [1, 2, 3] }, 'a.1');
-// 2
+// => 2
 get({ a: 1, b: 1 }, ['a' 0]);
-// [1, { a: 1 }]
+// => [1, { a: 1 }]
 
 // Get from an array
 get([1, 2, 3], 1);
-// 2
+// => 2
 get([1, 2, 3], [0, 1]);
-// [1, 2]
+// => [1, 2]
 
 // '*' acts like a '.map()' function
 get([{ a: 1, b: 2 }, { a: 3, b: 4 }], '*.a');
-// [1, 3]
+// => [1, 3]
 get([{ a: 1, b: 2 }, { a: 3, b: 4 }], '*.0');
-// [{ a: 1 }, { a: 3 }]
+// => [{ a: 1 }, { a: 3 }]
 get([{ a: 1, b: 2 }, { a: 3, b: 4 }], 'a'); // Works like '*.a' if applied to an array
-// [1, 3]
+// => [1, 3]
 
 // '~' => Keeps the full object :
 get([{ a: 1, b: 2 }, { a: 3, b: 4 }], '*.~a');
-// [{ a: 1 }, { a: 3 }]
+// => [{ a: 1 }, { a: 3 }]
 ```
 
 ## License

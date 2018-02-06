@@ -1,7 +1,7 @@
 ## Staging
 
 **Docs :**
-* ReadMe : compatibility notes
+* ReadMe : compatibility notes and various clarifications
 
 ## 1.0.3 - Jan 31th 2018
 
