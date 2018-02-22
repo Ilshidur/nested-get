@@ -1,6 +1,6 @@
 const expect = require('chai').expect;
 
-const get = require('../');
+const get = require('../lib');
 
 describe('nested-get', function () {
 
