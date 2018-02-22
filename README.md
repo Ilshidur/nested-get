@@ -9,6 +9,7 @@
 [![dependency status][dependency-badge]][dependency-url]
 [![devdependency status][devdependency-badge]][devdependency-url]
 [![build status][build-badge]][build-url]
+[![Code Climate][maintainability-badge]][maintainability-url]
 [![downloads][downloads-badge]][downloads-url]
 
 [![NPM][npm-stats-badge]][npm-stats-url]
@@ -117,6 +118,8 @@ SOFTWARE.
 [devdependency-url]: https://david-dm.org/ilshidur/nested-get#info=devDependencies
 [build-badge]: https://travis-ci.org/Ilshidur/nested-get.svg
 [build-url]: https://travis-ci.org/Ilshidur/nested-get
+[maintainability-badge]: https://api.codeclimate.com/v1/badges/e686158bc0820cc9d250/maintainability
+[maintainability-url]: https://codeclimate.com/github/Ilshidur/nested-get/maintainability
 [downloads-badge]: https://img.shields.io/npm/dt/nested-get.svg
 [downloads-url]: https://www.npmjs.com/package/nested-get
 [npm-stats-badge]: https://nodei.co/npm/nested-get.png?downloads=true&downloadRank=true
