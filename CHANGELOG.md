@@ -1,3 +1,15 @@
+## 1.0.6 - Sept 27th 2018
+
+**Minor :**
+* multiple refactors & enhancements
+* pinned dependencies
+
+**Docs :**
+* ReadMe : CodeClimate badge
+* ReadMe : typos fixes
+* ReadMe : alternatives
+* Added license
+
 ## 1.0.5 - Feb 6nd 2018
 
 **Docs :**
