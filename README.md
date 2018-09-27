@@ -84,6 +84,10 @@ get([{ a: 1, b: 2 }, { a: 3, b: 4 }], '*.~a');
 // => [{ a: 1 }, { a: 3 }]
 ```
 
+## Alternatives
+
+[![NPM](https://nodei.co/npm/dotprop.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/dotprop/)
+
 ## License
 
 MIT License
