@@ -32,7 +32,7 @@
   "homepage": "https://github.com/Ilshidur/nested-get#README",
   "dependencies": {},
   "devDependencies": {
-    "chai": "4.3.4",
+    "chai": "4.4.1",
     "istanbul": "0.4.5",
     "mocha": "6.2.3"
   }
